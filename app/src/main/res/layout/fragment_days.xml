@@ -6,7 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".fragments.DaysFragment">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_margin="5dp"
@@ -25,8 +37,10 @@
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:src="@drawable/fitness_bg"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="0dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -40,7 +54,7 @@
                 app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
             <ProgressBar
-                android:id="@+id/progressBar2"
+                android:id="@+id/pB"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -53,16 +67,17 @@
                 app:layout_constraintStart_toStartOf="@+id/imageView8" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/tvRestDays"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_20"
                 android:textColor="@color/white"
-                app:layout_constraintBottom_toTopOf="@+id/progressBar2"
-                app:layout_constraintEnd_toEndOf="@+id/progressBar2"
-                app:layout_constraintStart_toStartOf="@+id/progressBar2" />
+                app:layout_constraintBottom_toTopOf="@+id/pB"
+                app:layout_constraintEnd_toEndOf="@+id/pB"
+                app:layout_constraintStart_toStartOf="@+id/pB" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
