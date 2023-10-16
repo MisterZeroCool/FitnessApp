@@ -5,4 +5,7 @@
     <string name="slogan">На пути к совершенству!</string>
     <string name="_20">Осталось 20 дней</string>
     <string name="day">День : </string>
+    <string name="exercises"> Упражнений</string>
+    <string name="exercises_1"> Упражнение</string>
+    <string name="exercises_2"> Упражнения</string>
 </resources>
