@@ -12,4 +12,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         FragmentManager.setFragment(DaysFragment.newInstance(), this)
     }
+
+    override fun onBackPressed() {
+        if (FragmentManager.currentFragment is DaysFragment)
+        super.getOnBackPressedDispatcher().onBackPressed()
+        else FragmentManager.setFragment(DaysFragment.newInstance(), this)
+    }
 }
