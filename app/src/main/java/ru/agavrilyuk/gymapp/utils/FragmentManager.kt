@@ -6,7 +6,7 @@ import ru.agavrilyuk.gymapp.R
 
 object FragmentManager {
     var currentFragment: Fragment? = null
-    fun setFragment(newFragment: Fragment, act: AppCompatActivity){
+    fun setFragment(newFragment: Fragment, act: AppCompatActivity) {
         val transaction = act.supportFragmentManager.beginTransaction()
         transaction.replace(R.id.placeHolder, newFragment)
         transaction.commit()

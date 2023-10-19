@@ -1,7 +1,7 @@
 package ru.agavrilyuk.gymapp.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import ru.agavrilyuk.gymapp.R
 import ru.agavrilyuk.gymapp.fragments.DaysFragment
 import ru.agavrilyuk.gymapp.utils.FragmentManager
@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         if (FragmentManager.currentFragment is DaysFragment)
-        super.getOnBackPressedDispatcher().onBackPressed()
+            super.onBackPressedDispatcher.onBackPressed()
         else FragmentManager.setFragment(DaysFragment.newInstance(), this)
     }
 }

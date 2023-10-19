@@ -9,7 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import ru.agavrilyuk.gymapp.R
 import ru.agavrilyuk.gymapp.databinding.DaysListItemBinding
 
-class DaysAdapter(var listener: Listener) : ListAdapter<DayModel, DaysAdapter.DayHolder>(MyComparator()) {
+class DaysAdapter(var listener: Listener) :
+    ListAdapter<DayModel, DaysAdapter.DayHolder>(MyComparator()) {
 
     class DayHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val binding = DaysListItemBinding.bind(view)
@@ -17,13 +18,17 @@ class DaysAdapter(var listener: Listener) : ListAdapter<DayModel, DaysAdapter.Da
         fun setData(day: DayModel, listener: Listener) = with(binding) {
             val name = root.context.getString(R.string.day) + " ${adapterPosition + 1}"
             tvName.text = name
-            val exCounter = if (day.exercises.split(",").size == 21||day.exercises.split(",").size == 1){
-                day.exercises.split(",").size.toString() + " " + root.context.getString(R.string.exercises_1)
-            } else if ((day.exercises.split(",").size == 2||day.exercises.split(",").size == 3||day.exercises.split(",").size == 4||day.exercises.split(",").size == 23)){
-                day.exercises.split(",").size.toString() + " " + root.context.getString(R.string.exercises_2)
-            } else {
-                day.exercises.split(",").size.toString() + " " + root.context.getString(R.string.exercises)
-            }
+            val exCounter =
+                if (day.exercises.split(",").size == 21 || day.exercises.split(",").size == 1) {
+                    day.exercises.split(",").size.toString() + " " + root.context.getString(R.string.exercises_1)
+                } else if ((day.exercises.split(",").size == 2 || day.exercises.split(",").size == 3 || day.exercises.split(
+                        ","
+                    ).size == 4 || day.exercises.split(",").size == 23)
+                ) {
+                    day.exercises.split(",").size.toString() + " " + root.context.getString(R.string.exercises_2)
+                } else {
+                    day.exercises.split(",").size.toString() + " " + root.context.getString(R.string.exercises)
+                }
             tvExCounter.text = exCounter
             itemView.setOnClickListener {
                 listener.onClick(day)
@@ -51,7 +56,7 @@ class DaysAdapter(var listener: Listener) : ListAdapter<DayModel, DaysAdapter.Da
         }
     }
 
-    interface Listener{
+    interface Listener {
         fun onClick(day: DayModel)
     }
 }
