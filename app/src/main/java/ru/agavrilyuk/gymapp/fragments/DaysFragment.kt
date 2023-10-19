@@ -9,6 +9,7 @@ import android.view.inputmethod.InputBinding
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import ru.agavrilyuk.gymapp.R
+import ru.agavrilyuk.gymapp.activities.ExerciseModel
 import ru.agavrilyuk.gymapp.adapters.DayModel
 import ru.agavrilyuk.gymapp.adapters.DaysAdapter
 import ru.agavrilyuk.gymapp.databinding.FragmentDaysBinding
@@ -42,6 +43,16 @@ class DaysFragment : Fragment(), DaysAdapter.Listener {
             tempArray.add(DayModel(it, false))
         }
         return  tempArray
+    }
+
+    private fun fillExerciseList(day: DayModel){
+        val tempList = ArrayList<ExerciseModel>()
+        day.exercises.split(",").forEach{
+            val exerciseList = resources.getStringArray(R.array.exercise)
+            val exercise = exerciseList[it.toInt()]
+            val exerciseArray = exercise.split("|")
+            tempList.add(ExerciseModel(exerciseArray[0], exerciseArray[1], exerciseArray[2]))
+        }
     }
 
     companion object {
