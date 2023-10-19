@@ -56,9 +56,6 @@ class DaysFragment : Fragment(), DaysAdapter.Listener {
             tempList.add(ExerciseModel(exerciseArray[0], exerciseArray[1], exerciseArray[2]))
         }
         model.mutableLiveExercise.value = tempList
-        model.mutableLiveExercise.observe(viewLifecycleOwner, {
-
-        })
     }
 
     companion object {
