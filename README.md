@@ -15,7 +15,7 @@
 ## Screenshots 
 <h3 align="center"><strong>Работа приложения</strong></h3>
 <p align="center">
-  <img src="[https://i.ibb.co/BLXwrx5/fitness-gif.gif](https://github.com/MisterZeroCool/ImagesForProject/blob/main/images/TheNumberCompositionGameImages/description.png)" alt="Preview"/>
+  <img src="![mygif](https://i.ibb.co/BLXwrx5/fitness-gif.gif)" alt="Preview"/>
 </p>
 
 
