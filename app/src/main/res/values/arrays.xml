@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="exercise">
-        <item>otdich| x10 | otdich.gif</item> <!-- 0  -->
-        <item>bench_press | x10 | bench_press.gif</item> <!-- 1  -->
-        <item>triceps gantelia| x10 | triceps_gantelia.gif</item> <!-- 2  -->
-        <item>brusia | x10 | brusia.gif</item> <!-- 3  -->
-        <item>grud rasvodka | x10 | grud_rasvodka.gif</item> <!-- 4  -->
-        <item>cable triceps push-down | x10 | cable-tricep-pushdown.gif</item> <!-- 5  -->
-        <item>otgimania uskim | x10 | otgimania_uskim.gif</item> <!-- 6  -->
-        <item>overhead-cable-tricep-extension | x10 | overhead-cable-tricep-extension.gif</item> <!-- 7  -->
-        <item>press | x10 | press.gif</item> <!-- 8 -->
-        <item>tiaga bloka | x10 | tiaga_bloka.gif</item> <!-- 9  -->
-        <item>pull-over | x10 | pull-over.gif</item> <!-- 10 -->
+        <item>Relax|30|cat-animal.gif</item><!--0-->
+        <item>V type ABS|x30|v_ab.gif</item><!--1-->
+        <item>Glute activation|x10|activacion_de_glutios.gif</item> <!--2-->
+        <item>Bike|40|bicicleta.gif</item><!--3-->
+        <item>Push-ups|x30|flexiones.gif</item><!--4-->
+        <item>Jump Push-ups|30|flexiones_salto.gif</item><!--5-->
+        <item>Knees to chest|30|rodillas_al_pecho.gif</item><!--6-->
+        <item>Knees to chest (Hard)|30|rodillas_inclinados_al_pecho.gif</item><!--7-->
+        <item>Relax|10|cat-animal.gif</item><!--8-->
     </string-array>
     <string-array name="day_exercises">
-        <item>1,0,3,0,10,0,2,3</item> <!-- Day 1 -->
-        <item>1</item> <!-- Day 2 -->
-        <item>1,0,</item> <!-- Day 3 -->
-        <item>1,0,3,</item> <!-- Day 4 -->
-        <item>1,0,3,3</item> <!-- Day 5 -->
-        <item>1,0,3,0,10</item> <!-- Day 6 -->
-        <item>1,0,3,0,10,0</item> <!-- Day 7 -->
-        <item>1,0,3,0,10,0,2</item> <!-- Day 8 -->
-        <item>1,0,3,0,10,0,2,3</item> <!-- Day 9 -->
-        <item>1,0,3,0,10,0,2,3,2</item> <!-- Day 9 -->
-        <item>1,0,3,0,10,0,2,3,2,3</item> <!-- Day 9 -->
-        <item>1,0,3,0,10,0,2,3,2,3,4</item> <!-- Day 9 -->
-        <item>3,0,10,0,2,3,1,0,3,0,10,0,2,3,1,0,3,0,10,0,2,3,</item> <!-- Day 11 -->
-        <item>1,0,3,0,10,0,2,3</item> <!-- Day 12 -->
-        <item>1,0,3,0,10,0,2,3</item> <!-- Day 13 -->
-        <item>1,0,3,0,10,0,2,3</item> <!-- Day 14 -->
-        <item>1,0,3,0,10,0,2,3</item> <!-- Day 15 -->
-        <item>1,0,3,0,10,0,2,3</item> <!-- Day 16 -->
+        <item>1,0,3,0,5,8,5,0,2,0,7,0,1</item> <!-- Day 1 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 2 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 3 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 4 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 5 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 6 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 7 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 8 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 9 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 10 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 11 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 12 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 13 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 14 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 15 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 16 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 17 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 18 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 19 -->
+        <item>1,0,3,0,5,0,5,0,2,0,7,0,1,0,1,0,3,0,5,0,5</item> <!-- Day 20 -->
     </string-array>
 </resources>

@@ -2,9 +2,9 @@ package ru.agavrilyuk.gymapp.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import androidx.appcompat.app.AppCompatActivity
 import ru.agavrilyuk.gymapp.R
 import ru.agavrilyuk.gymapp.databinding.ActivitySplashBinding
 
@@ -15,7 +15,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        timer = object : CountDownTimer(2000, 2000){
+        timer = object : CountDownTimer(2000, 2000) {
             override fun onTick(millisUntilFinished: Long) {
 
             }
