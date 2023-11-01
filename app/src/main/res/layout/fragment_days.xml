@@ -4,8 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D7C2B2"
+    android:background="@color/blue_bg"
     tools:context=".fragments.DaysFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcViewDays"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -13,6 +25,7 @@
         android:layout_height="150dp"
         android:layout_margin="5dp"
         app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,7 +35,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
@@ -30,6 +43,18 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/slogan"
+                android:textColor="#FF9800"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ProgressBar
@@ -40,50 +65,27 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:progress="50"
-                android:progressBackgroundTint="@color/white"
-                android:progressTint="@color/grin"
-                android:secondaryProgressTint="@color/grin"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
-                app:layout_constraintEnd_toEndOf="@+id/imageView8"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/imageView8" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/slogan"
-                android:textColor="@color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/imageView8"
-                app:layout_constraintTop_toTopOf="@+id/imageView8" />
+                android:progressBackgroundTint="#FF0000"
+                android:progressTint="#005EFF"
+                android:scaleY="2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@+id/imageView2" />
 
             <TextView
                 android:id="@+id/tvRestDays"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_20"
-                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:background="#CB000000"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Осталось 20 дней"
+                android:textColor="#FF9800"
                 app:layout_constraintBottom_toTopOf="@+id/pB"
                 app:layout_constraintEnd_toEndOf="@+id/pB"
                 app:layout_constraintStart_toStartOf="@+id/pB" />
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcViewDays"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
